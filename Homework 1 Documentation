@@ -1,0 +1,34 @@
+Documentation for the Homework 1:
+--------------------------------------------
+Name : Vijendra Kumar Bhogadi
+UTA-ID: 1001052460
+
+There are two python scripts attached 
+1) bhogadi_data_partition.py -- Running this code will distribute the data into test and training with 50:50 split
+2) bhogadi_naivebayes.py -- Running this code starts the actual impleemtatin of the algorithm
+
+Execution Details:
+------------------
+
+To run the code just open with 'Python Idle' which is a builtin python ide and run.
+All the directory names or filepaths in the scripts must be replaced with the directory names or paths on your local machine otherwise an error will be raised
+
+Implementation Details:
+-----------------------
+
+1) Constructed a vocabulary of unique words with sklearn.feature_extraction library
+2) Stemmed and removed stop words from the vocabulary
+3) Computed the prior probability of each class
+4) Computed the probability of each feature(word) in a particular class and constructed a matrix of that respect to each class
+5) For each test document, Computed a likelihood estimate and applied log to the product of probabilities to avoid getting a zero
+6) Wrote the results to a text file which is also attached 
+7) Calculate accuracy
+8) Accuracy is --- 83.48%
+
+
+References:
+----------
+1) Stanford NLP -- naive bayes pdf documents--https://web.stanford.edu/class/cs124/lec/naivebayes.pdf
+2) Machine Learning -- Tom Mitchell
+3) Python documentation--https://docs.python.org/2/
+4) Scikit learn documemtation ---http://scikit-learn.org/stable/index.html
